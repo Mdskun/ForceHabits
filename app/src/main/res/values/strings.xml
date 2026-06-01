@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ForceHabits</string>
+    <string name="accessibility_service_label">Strict Habit Screen Monitor</string>
+    <string name="accessibility_service_description">Monitors which apps are open and enforces your screen time limits by showing a habit reminder overlay when you open restricted apps after your set time.</string>
+</resources>
