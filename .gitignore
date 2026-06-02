@@ -1,34 +1,48 @@
-# Gradle files
+# ── Gradle ────────────────────────────────────────────────────────
 .gradle/
 build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-# Local configuration file (sdk path, etc)
+# ── Local config (never commit — contains SDK path & signing info) ─
 local.properties
+keystore.properties
 
-# Log/OS Files
-*.log
+# ── Android signing ────────────────────────────────────────────────
+*.jks
+*.keystore
+*.p12
 
-# Android Studio generated files and folders
+# ── Android Studio / IntelliJ ─────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
 captures/
 .externalNativeBuild/
 .cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
 
-# Keystore files
-*.jks
-*.keystore
+# ── Kotlin ────────────────────────────────────────────────────────
+.kotlin/
 
-# Google Services (e.g. APIs or Firebase)
+# ── Output artifacts ──────────────────────────────────────────────
+*.apk
+*.aab
+*.ap_
+output-metadata.json
+
+# ── Logs & profiling ──────────────────────────────────────────────
+*.log
+*.hprof
+
+# ── Google Services / Firebase ────────────────────────────────────
 google-services.json
 
-# Android Profiling
-*.hprof
+# ── OS noise ──────────────────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
